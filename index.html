@@ -74,7 +74,7 @@
                     </div>
                 </a>
 
-                <div class="uk-width-expand uk-margin-remove">
+                <div class="uk-width-expand uk-margin-remove text-align: justify;">
                     <p id="about"> I am <b>Sabib Ahmed</b>, a Computer Science graduate from 
                     <a href="https://www.sec.ac.bd/" style="color:#007fe6" target='_'>Sylhet Engineering College</a> (affiliated with SUST, Bangladesh). 
                     You can reach me at <span style="color:#007fe6;">sabibahmed40@gmail.com</span>.
@@ -136,7 +136,7 @@
 
             <!-- Publications Section -->
             <hr class="uk-margin-small">
-            <p id="research" class="uk-h2 uk-text-bold" style="color:#BF5700;">Publications (Conference)</p>
+            <p id="research" class="uk-h2 uk-text-bold" style="color:#BF5700;">Conference Papers</p>
             <ul class="uk-list uk-margin-small-bottom">
                 <li>
                     <div class="uk-text-lead"><a href="https://peccii.pust.ac.bd/" style="color:#b30749"><b>[IEEE PECCII 2026]</b></a> &nbsp; Parameter-Efficient Fine-Tuning with Adapters for Quantifying Sorghum Disease.</div>
@@ -149,10 +149,11 @@
                         </summary>
 
                         <div style="margin-top: 8px; line-height: 1.6; color: #444; text-align: justify;">
-                            Designed a 
-                            parameter-efficient adapter-based deep learning framework using EfficientNet-B3 for quantifying six 
-                            classes of Sorghum diseases, achieving high accuracy while training only 15.56% of the model 
-                            parameters. 
+                            Developed an adapter-based parameter-efficient fine-tuning framework (PEFT-B3) for multi-class 
+                            sorghum disease classification using a pretrained EfficientNet-B3 backbone. Integrated lightweight 
+                            adapter modules to reduce trainable parameters to 15.56% while preserving full fine-tuning performance. 
+                            Achieved 99.58% accuracy on a real-world, class-imbalanced dataset, 
+                            demonstrating efficient and deployment-ready deep learning for agricultural disease diagnosis. 
                         </div>
                     </details>
                     <div class="uk-text-lead"></div>
@@ -165,16 +166,29 @@
                     <div class="uk-text-lead"><a href="https://qpain.org/" style="color:#b30749"><b>[IEEE QPAIN 2026]</b></a> &nbsp; Evaluating Stable Diffusion with LoRA for Class-Imbalanced Medical Image Augmentation.</div>
                     <div> <b>Sabib Ahmed</b>, et al. </div>
                     <div><i>2026 IEEE 2nd International Conference on Quantum Photonics, Artificial Intelligence & Networking (QPAIN) </i></div>
-                    <div><span style="background-color: #17a2b8; color: white; padding: 2px 5px; border-radius: 5px;">Under Review</span></div>
+                    <div><span style="background-color: lightgreen; color: white; padding: 2px 5px; border-radius: 5px;">Accepted</span></div>
                     <details style="margin-top: 10px;">
                         <summary style="cursor: pointer; font-weight: 600; color: #b30749;">
-                            📄 Details
+                            📄 Abstract
                         </summary>
 
                         <div style="margin-top: 8px; line-height: 1.6; color: #444; text-align: justify;">
-                            Evaluated Stable Diffusion fine-tuned with Low-Rank Adaptation (LoRA) to generate minority-class renal stone 
-                            CT images for class-imbalanced medical datasets. Demonstrated that moderate synthetic augmentation (25–50%) 
-                            improves recall and F1-score across CNN and Transformer models while excessive synthetic reliance degrades performance. 
+                            Deep learning models for medical image analysis are frequently constrained by severe class imbalance 
+                            and data scarcity, especially in clinical settings where positive cases are rare. Although GAN-based 
+                            synthesis and classical augmentation have been investigated to address these problems, they often 
+                            have poor scalability under real-world restrictions, low diversity, and training instability. In 
+                            this study, we thoroughly assess text-to-image Stable Diffusion as a useful data augmentation 
+                            technique for class-imbalanced medical imaging. Using renal stone CT imaging as a case study, 
+                            we optimize Stable Diffusion with Low-Rank Adaptation (LoRA) to produce high-quality synthetic 
+                            samples exclusively for the minority class. Instead of suggesting a new classifier, we evaluate 
+                            the created data's usefulness using many standardized downstream evaluation backbones, such as 
+                            CNN and transformer-based models, to guarantee robustness among representation learning paradigms. 
+                            Comprehensive tests and ablation studies on synthetic-to-real data ratios show that while excessive 
+                            dependence on synthetic data worsens performance due to distributional bias, moderate diffusion-based 
+                            augmentation (25–50%) consistently increases recall and F1-score. Qualitative analysis and Fr'echet 
+                            Inception Distance enhance the realism of the generated visuals. Overall, this study demonstrates 
+                            that, under realistic data and computational restrictions, Stable Diffusion, when modified via LoRA, 
+                            can function as an efficient but limited data augmentation technique for class-imbalanced medical imaging. 
                         </div>
                     </details>
                     <div class="uk-text-lead"></div>
@@ -288,7 +302,7 @@
 
             <!-- Publications Section -->
             <hr class="uk-margin-small">
-            <p id="research" class="uk-h2 uk-text-bold" style="color:#BF5700;">Publications (Journal)</p>
+            <p id="research" class="uk-h2 uk-text-bold" style="color:#BF5700;">Peer-Reviewed Journal Article</p>
             <ul class="uk-list uk-margin-small-bottom">
 
                 <li>
@@ -458,5 +472,6 @@
 
     </body>
 </html>
+
 
 
