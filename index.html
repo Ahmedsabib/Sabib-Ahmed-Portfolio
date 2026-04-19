@@ -215,11 +215,12 @@
                         </summary>
 
                         <div style="margin-top: 8px; line-height: 1.6; color: #444; text-align: justify;">
-                            Developed an adapter-based parameter-efficient fine-tuning framework (PEFT-B3) for multi-class 
-                            sorghum disease classification using a pretrained EfficientNet-B3 backbone. Integrated lightweight 
-                            adapter modules to reduce trainable parameters to 15.58% while preserving full fine-tuning performance. 
-                            Achieved 99.58% accuracy on a real-world, class-imbalanced dataset, 
-                            demonstrating efficient and deployment-ready deep learning for agricultural disease diagnosis. 
+                            This paper introduces PEFT-B3, one of the first systematic applications of adapter-based parameter-efficient fine-tuning (PEFT) 
+                            for sorghum disease classification, showing that large pretrained vision models can be adapted to agricultural disease detection without 
+                            full fine-tuning. Its novelty lies in demonstrating that training only lightweight adapters (15.58% of parameters) can match full fine-tuning performance 
+                            (99.58% accuracy) while dramatically reducing computational cost, making deployment feasible in resource-constrained agricultural settings. The strength of 
+                            the work is not just high accuracy, but the broader idea that parameter-efficient 
+                            adaptation can replace conventional full-model retraining in agricultural AI, introducing a scalable and deployable paradigm largely unexplored in this domain. 
                         </div>
                     </details>
                     <div class="uk-text-lead"></div>
@@ -294,36 +295,6 @@
                     <div class="uk-text-lead"></div>
                 </li>
 
-                <!-- <li>
-                    <div class="uk-text-lead"><a href="https://eict2025.kuet.ac.bd/index.php" style="color:#b30749"><b>[IEEE EICT 2025]</b></a> &nbsp; Ensemble-ASNet: Weighted Transfer Learning Framework with Grad-CAM++ for Robust Kidney Stone Classification</div>
-                    <div> <b>Sabib Ahmed</b> </div>
-                    <div> <i>7th International Conference on Electrical Information and Communication Technology (EICT) </i></div>
-                    <div><span style="background-color: lightgreen; padding: 2px 5px; border-radius: 5px;">Accepted</span></div>
-                    <div class="uk-text-lead"></div>
-
-                    <details style="margin-top: 10px;">
-                        <summary style="cursor: pointer; font-weight: 600; color: #b30749;">
-                            📄 Abstract
-                        </summary>
-
-                        <div style="margin-top: 8px; line-height: 1.6; color: #444; text-align: justify;">
-                            Timely diagnosis and successful treatment depend on the accurate identification 
-                            of renal abnormalities, including kidney stones, cysts, tumors, and normal tissue 
-                            from CT scans, and automated, interpretable systems can aid in clinical decision-making 
-                            while lowering diagnostic mistakes. In order to capitalize on the complementing 
-                            characteristics of InceptionV3, VGG16, and MobileNetV2 in multi-scale, fine-grained, 
-                            and effective feature extraction, this study suggests Ensemble-ASNet, a weighted ensemble 
-                            framework. Grad-CAM++ visuals of the component models were used to evaluate interpretability, 
-                            and class probabilities from the separate models are integrated using optimized ensemble weights. 
-                            Ensemble-ASNet outperformed all individual baseline models, achieving 99.81% accuracy, precision, 
-                            recall, and F1-score when tested on a kidney CT dataset. The models' emphasis on clinically significant
-                            regions was validated by the visualizations, which increased their credibility. These findings show that
-                            Ensemble-ASNet offers a very precise and comprehensible method for multi-class renal condition diagnosis, 
-                            with great promise for clinical use and future expansion to temporal and multi-institutional imaging datasets.
-                        </div>
-                    </details>
-                </li> -->
-
                 <li>
                     <div class="uk-text-lead"><a href="https://icerie2025.sust.edu/" style="color:#b30749"><b>[ICERIE 2025]</b></a> &nbsp; An Innovative Approach to Smoker Status Prediction with ML Algorithms in Bangladesh</div>
                     <div> <b>Sabib Ahmed</b>, et al. </div>
@@ -383,11 +354,14 @@
                         </summary>
 
                         <div style="margin-top: 8px; line-height: 1.6; color: #444; text-align: justify;">
-                            Developed a hybrid CNN-ViT model leveraging cross-attention mechanisms to improve multi-class retinal OCT 
-                            image classification. Integrated dual explainability techniques like Grad-Cam and Attention Map to visualize 
-                            both spatial and feature-level attention, enhancing interpretability. 
-                            Achieved high accuracy across 8 retinal disease classes, demonstrating a 
-                            robust and explainable approach for ophthalmic diagnostics. 
+                            This paper proposes a cross-attention–based CNN–ViT hybrid framework that is novel in how it actively fuses local 
+                            lesion features and global contextual information, rather than simply combining them through standard concatenation. 
+                            By allowing CNN features (fine-grained retinal details) to dynamically attend to transformer representations (global structure), 
+                            the model captures subtle inter-class differences that conventional architectures miss. Its second key innovation is a unified 
+                            explainability mechanism (Grad-Attention Map) that merges Grad-CAM and transformer attention into a single, clinically interpretable 
+                            visualization, providing both precise lesion localization and global reasoning in one view. Validated on a relatively complex 8-class OCT 
+                            classification task, the framework stands out for 
+                            jointly advancing feature fusion, interpretability, and clinical reliability, making it a strong and practically meaningful contribution beyond incremental accuracy gains.
                         </div>
                     </details>
                     <div class="uk-text-lead"></div>
@@ -405,12 +379,13 @@
                         </summary>
 
                         <div style="margin-top: 8px; line-height: 1.6; color: #444; text-align: justify;">
-                            Designed a weighted ensemble of InceptionV3, VGG16, and MobileNetV2 for accurate and 
-                            interpretable kidney lesion classification from CT scans. Integrated Grad-CAM++ for 
-                            model interpretability and optimized ensemble weights for combining class probabilities. 
-                            Achieved 99.42% accuracy, precision, recall, and F1-score, validating clinical relevance 
-                            and highlighting important regions in scans. Demonstrated a robust, precise, and explainable 
-                            approach with potential for clinical deployment and multi-institutional dataset expansion.
+                            This work proposes Ensemble-ASNet, a novel optimized weighted ensemble framework that improves 
+                            multi-class kidney lesion classification by learning optimal model contributions through constrained
+                            F1-score–driven soft voting, rather than relying on equal or heuristic fusion. By selectively combining 
+                            complementary representations from InceptionV3, VGG16, and MobileNetV2, the model reduces overfitting, class 
+                            imbalance, and single-model bias while achieving highly robust performance. Unlike prior approaches, it tightly 
+                            integrates performance-aware ensembling with Grad-CAM++–based interpretability, ensuring that predictions are both highly 
+                            accurate and clinically meaningful, making it a reliable and practically deployable diagnostic system.
                         </div>
                     </details>
                     <div class="uk-text-lead"></div>
